@@ -1,0 +1,92 @@
+/* Fundo e fontes */
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #0f0;
+  text-align: center;
+}
+
+/* Título principal */
+.tituloprincipal {
+  color: #0f0;
+  font-size: 60px;
+  text-shadow: 0 0 15px #0f0;
+  margin-top: 30px;
+}
+
+/* Parágrafos */
+.p1, .p2 {
+  font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #8f8;
+  text-shadow: 0 0 8px #0f0;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.p2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0f0;
+  margin-bottom: 40px;
+}
+
+/* Imagem */
+.imagemprincipal {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;
+  border: 4px solid #0f0;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #0f0;
+}
+
+/* Container geral do cronômetro */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border: 3px solid #0f0;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #0f0;
+  padding: 30px 40px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+/* Cronômetro com visual digital */
+#timer {
+  display: flex;
+  gap: 20px;
+}
+
+/* Unidades de tempo */
+.unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111;
+  border: 2px solid #0f0;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100px;
+  box-shadow: inset 0 0 15px #0f0;
+}
+
+.value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #8f8;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
