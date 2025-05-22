@@ -1,49 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2 anos!!</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2 anos!!</title>
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    <h1 class="tituloprincipal">Eu amo você!!</h1>
-    <img class="imagemprincipal" src  = "12.png" alt="Meu amor" >
+  <div id="login-section">
+    <h2>Digite a senha para acessar o site</h2>
+    <input type="password" id="password" placeholder="Senha" />
+    <button onclick="checkPassword()">Entrar</button>
+    <div id="error-message"></div>
+  </div>
 
-    <p class="p1">Já fazem 2 anos que estamos juntos, mas sendo sincero as vezes parecem 20, porque quando estou ao seu lado, me sinto completo e 100% a vontade. Sei que tenho muitos pontos a melhorar e que sempre te deixo muito a desejar, mas eu prometo melhorar a cada dia mais, por amor a você!</p>
-    <P class="p2">Eu e você contra o mundo!!</P>
+  <div id="conteudo-seguro" style="display: none;">
+    <!-- PERGUNTA -->
+    <div id="pergunta">Você me ama?</div>
+    <button class="botao sim" onclick="responderSim()">Sim</button>
+    <button class="botao nao" onclick="responderNao()">Não</button>
 
-    <h3 class="tituloprincipal">Tempo de namoro:</h3>
-<p>Desde 23 de Maio de 2023</p>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div id="conteudo">
+      <h1 class="tituloprincipal">Eu amo você!!</h1>
+      <a href="https://youtu.be/3rAfAtSC7TI" target="_blank">
+      <img class="imagemprincipal" src="32.jpg" alt="Meu amor" />
+      </a>
+      <p class="p1">Já fazem 2 anos que estamos juntos, mas sendo sincero as vezes parecem 20, porque quando estou ao seu lado, me sinto completo e 100% a vontade. Você já percebeu que as vezes sou frio e meio distante, mas esse realmente é meu jeito. Tem dias que eu simplesmente me sinto como se nada me animasse, mas quando você esta por perto, esse sentimento começa a desaparecer aos poucos. Eu sei que tem momentos que vc se decepciona comigo, por algo que falo ou faço, sinto muito por isso. Estou realmente tentado mudar, mas isso não é tão simples, é uma luta constante dentro de mim. Uma parte de mim quer permanecer com esses "mecanismos de defesa" e outra quer só fazer o que for preciso pra manter vc por perto. Por mais que eu de fato fale muito bem, sempre tenho dificuldade quando o assunto é sentimento, mas no fim de tudo isso, o que estou tentando dizer é:</p>
+      <p class="p2">Eu e você para sempre! ❤️ Esse "relogio" vai permanecer aqui eternamente, assim como meu amor por você.</p>
 
-<div class="container">
-  <div id="timer">
-    <div class="unit">
-      <span class="value" id="years">0</span>
-      <span class="label">Anos</span>
+      <h3 class="tituloprincipal">Nosso tempo juntos:</h3>
+      <p>Desde 23 de Maio de 2023</p>
+
+      <!-- CRONÔMETRO -->
+      <div class="container">
+        <div class="unit"><span class="value" id="years">0</span><span class="label">Anos</span></div>
+        <div class="unit"><span class="value" id="months">0</span><span class="label">Meses</span></div>
+        <div class="unit"><span class="value" id="days">0</span><span class="label">Dias</span></div>
+        <div class="unit"><span class="value" id="hours">0</span><span class="label">Horas</span></div>
+        <div class="unit"><span class="value" id="minutes">0</span><span class="label">Minutos</span></div>
+        <div class="unit"><span class="value" id="seconds">0</span><span class="label">Segundos</span></div>
+      </div>
     </div>
-    <div class="unit">
-      <span class="value" id="months">0</span>
-      <span class="label">Meses</span>
-    </div>
-    <div class="unit">
-      <span class="value" id="days">0</span>
-      <span class="label">Dias</span>
-    </div>
-    <div class="unit">
-      <span class="value" id="hours">0</span>
-      <span class="label">Horas</span>
-    </div>
-    <div class="unit">
-      <span class="value" id="minutes">0</span>
-      <span class="label">Minutos</span>
-    </div>
-    <div class="unit">
-      <span class="value" id="seconds">0</span>
-      <span class="label">Segundos</span>
+
+    <!-- RESPOSTA ERRADA -->
+    <div id="imagemNao">
+      <img src="velha.jpg" alt="Resposta errada!" />
+      <h1>Resposta errada!!</h1>
     </div>
   </div>
-</div>
-    <script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
